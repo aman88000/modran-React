@@ -17,3 +17,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ##  react-query you can also use for API its very easy to all, First we need to install react-query package and then import 'useQuery' for API call, example 
 
+
+# SWR 
+
+## need to install swr package and import useSWR and use it, its also we can use for API, but basically there package is using for cache purpose
