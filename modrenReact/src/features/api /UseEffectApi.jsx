@@ -6,6 +6,7 @@ function UseEffectApi(){
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState('')
 
+
  useEffect(()=>{
    fetch(URL).then((res)=>{
     setLoading(true);
