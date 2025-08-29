@@ -1,10 +1,12 @@
 import './App.css'
-import UseEffectApi from './features/api /UseEffectApi'
+import ApiUsingSuspense from './features/api /ApiUsingSuspense'
+// import UseEffectApi from './features/api /UseEffectApi'
 function App() {
 
   return (
     <>
-    <UseEffectApi />
+    {/* <UseEffectApi /> */}
+    <ApiUsingSuspense />
     </>
   )
 }
