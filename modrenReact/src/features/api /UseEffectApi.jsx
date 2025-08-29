@@ -3,13 +3,11 @@ function UseEffectApi(){
     const URL = 'https://dummyjson.com/products'
 
     const [data, setData] = useState()
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
     const [error, setError] = useState('')
 
 
- useEffect(()=>{
-   fetch(URL).then((res)=>{
-    setLoading(true);
+  !data && fetch(URL).then((res)=>{
     return res.json()
    }).then((result)=>{
     setLoading(false);
@@ -18,7 +16,7 @@ function UseEffectApi(){
     setLoading(false)
     setError(error)
    })
- }, [])
+
 
 if(loading){
     return(<h2>loading....</h2>)
