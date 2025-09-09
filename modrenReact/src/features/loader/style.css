@@ -1,0 +1,31 @@
+
+.my-loader-small{
+    width: 50px;
+    height: 50px;
+}
+
+.my-loader-medium{
+    width: 100px;
+    height: 100px;
+}
+
+.my-loader-large{
+    width: 200px;
+    height: 200px;
+}
+
+.my-loader{
+    border: 8px solid;
+    border-radius: 50%;
+    border-color: aqua yellow yellow yellow;
+    animation: loader-animation 1s linear infinite;
+}
+
+@keyframes loader-animation {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 360deg;
+    }
+}
